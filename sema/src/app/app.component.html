@@ -1,0 +1,17 @@
+<div class="container">
+<form>
+<label for="inutile">Cose inutili</label>
+<input type="text"name="inutile" #inutile>
+
+<label for="spamm">Spam</label>
+<input type="text" name="spamm" #spam>
+
+<input type="submit" value="spamma" (click)="spamma(inutile, spam)">
+</form>
+
+
+<ul>
+<li *ngFor="let lol of vettore">
+    <app-vis [Kristian]="lol"> </app-vis>
+</li>
+</ul>
